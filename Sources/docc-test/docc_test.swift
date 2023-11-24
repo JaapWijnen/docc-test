@@ -1,7 +1,12 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
-struct Thing {
-    var x: Double
-    var y: Double
+public struct Thing {
+    public var x: Double
+    public var y: Double
+    
+    public init(x: Double, y: Double) {
+        self.x = x
+        self.y = y
+    }
 }
