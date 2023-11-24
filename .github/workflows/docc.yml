@@ -22,7 +22,7 @@ jobs:
           version: swift-DEVELOPMENT-SNAPSHOT-2023-11-20-a
       - name: build docs
         run: swift package --allow-writing-to-directory docs generate-documentation --target BasicDifferentiation --transform-for-static-hosting --hosting-base-path PassiveLogic/differentiable-swift-examples --output-path docs
-      - setup pages
+      - name: setup pages
         id: pages
         uses: actions/configure-pages@v3
       - name: upload artifact
