@@ -29,3 +29,9 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: docs
+      - name: deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
